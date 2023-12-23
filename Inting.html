@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Inting's Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Our.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Our Blogs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <article>
+                    <h2 class="mb-4">WELCOME  TO MY BLOG!</h2>
+                    <img src="pic4.jpg  " alt="Blog Image" class="img-fluid mb-4" style="width: 100%; height: 550px;">
+                    <div class="paragraph-container">
+                    <p> Hi, I am Israel A. Inting</p>
+                    <p> My life is full of abundant of blessings that I really appreciated and never been disappointed of everything. I have a lot of experiences and lessons that brings me to the top and become a warrior in facing any hardships, it makes me strong and brave. Beside of that I have hobbies that gives me happiness and help me save from every unexpected bad days. Whenever I get sad I just sleep or rest my mind and body, I am just doing like meditation for me to relax and to keep the sadness away from me. I love dancing and dancing really lessen my boredom. Dancing creates a kind of feelings or moods that can provide something I really want to have. Indeed, this help me to be more active and healthy because it is a type of exercise as well. I do biking too during the sunsets at our coastal road. Biking makes you feel relax and free that when a breeze hits on you, it's like you are flying up in the sky. Especially if you are biking near coastal with so much mangroves because that's really where most air is released and can feels a cooling breezing air. I love editing videos too and I starts interest in editing when I am at first year college. It is my dream to be an video editor when I was in highschool but because of having no gadget I was losing to pursue it. But now that I had a smartphone I take my chances to do it and make my dreams happen.</p>
+                    <img src="pic2.jpg" alt="Blog Image" class="img-fluid mb-4" style="width: 100%; height: 550px;">
+                    <p> These are a lot of my personal life that I will cherish everyday. I should proud of it whatever it takes and whether if it is good or bad I will appreciate it as this is part of my life. These are my life, my personal things that tells me who I am. I can be anyone but the most valuable of all is being a person of who you are.</p>
+                     <img src="pic3.jpg" alt="Blog Image" class="img-fluid mb-4" style="width: 100%; height: 550px;">
+                    </div>
+                    <div class="mt-4">
+                        <h5>Reactions</h5>
+                        <div class="reaction-buttons">
+                            <button class="btn btn-sm btn-outline-primary mr-2" onmouseover="showReactions()" onmouseout="hideReactions()">Like</button>
+                            <a href="#comments" class="btn btn-sm btn-outline-secondary mr-2">Comment</a>
+                            <a href="#share" class="btn btn-sm btn-outline-warning mr-2">Share</a>
+                            <div class="reactions" onmouseover="showReactions()" onmouseout="hideReactions()">
+                                <button class="btn btn-sm btn-outline-secondary" onclick="react('like')">Like 👍</button>
+                                <button class="btn btn-sm btn-outline-secondary" onclick="react('love')">Love ❤️</button>
+                                <button class="btn btn-sm btn-outline-success" onclick="react('care')">Care 🤗</button>
+                                <button class="btn btn-sm btn-outline-warning" onclick="react('wow')">Wow 😲</button>
+                                <button class="btn btn-sm btn-outline-info" onclick="react('sad')">Sad 😢</button>
+                                <button class="btn btn-sm btn-outline-danger" onclick="react('angry')">Angry 😡</button>
+                               
+                            </div>
+                        </div>
+                        <div class="mt-2" id="reactionCount">0 Likes</div>
+                    </div>  
+
+                    
+                    <div id="comments" class="comment-section">
+                        <h5>Comments</h5>
+                        <textarea class="form-control mb-2" rows="3" placeholder="Write a comment"></textarea>
+                        <button class="btn btn-primary" onclick="postComment()">Post Comment</button>
+                        <div id="commentList" class="comment-list"></div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> 
+
+</body>
+</html>

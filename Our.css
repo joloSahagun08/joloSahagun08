@@ -1,0 +1,55 @@
+body {
+    background-image: url('Background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+article h2, article p {
+ color: white;
+}
+.reaction-buttons {
+    position: relative;
+}
+
+.reactions {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.reactions button {
+    margin-right: 5px;
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.comment-section button {
+    display: block;
+    margin: 0 auto;
+}
+
+.comment-list {
+    margin-top: 20px;
+}
+.paragraph-container {
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(128,128,128,1) 0%, rgba(120,120,120,1) 0%, rgba(0,0,0,1) 100%);
+    padding: 20px; 
+    border-radius: 10px; 
+}   

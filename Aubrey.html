@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Aubrey's Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Our.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Our Blogs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <article>
+                    <h2 class="mb-4">WELCOME  TO MY BLOG!</h2>
+                    <img src="meh.png" alt="Blog Image" class="img-fluid mb-4" style="width: 100%; height: 550px;">
+                    <div class="paragraph-container">
+                        <p>Hey everyone! I'm Aubrey Ornopia, the cool BSIT student living life to the fullest in Cogon, Cordova, Cebu. I've got a lot going on, from techie stuff to creative vibes, and I'm all about making that money. Let's dive into what makes me tick!</p>
+
+                        <p> I'm in the BSIT game, exploring the tech world. Whether it's figuring out how things work or dabbling in cool software. </p>
+                        
+                        <p>But wait, there's more to me! I'm a big fan of anime and games. Whether I'm binge-watching anime or leveling up in my favorite games, I know how to keep it fun and entertaining.</p>
+                        
+                        <p>I'm not just all about the screens; I've got an artistic side too. Drawing, painting, tattoo —you name it, I'm into it. Expressing myself through art is just another way I add color to my life.</p>
+                        
+                        <p>And guess what? I'm not stopping there. I'm all about making that moolah. Online ventures, investments—I've got an entrepreneurial spirit, and I'm ready to turn my passions into cash.</p>
+                        
+                        <p>My hometown is the chill Cogon in Cordova, Cebu. It's not just where I live; it's a part of who I am. The good vibes, friendly faces, and cultural richness of Cogon are all ingredients in my awesome life.</p>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Reactions</h5>
+                        <div class="reaction-buttons">
+                            <button class="btn btn-sm btn-outline-primary mr-2" onmouseover="showReactions()" onmouseout="hideReactions()">Like</button>
+                            <a href="#comments" class="btn btn-sm btn-outline-secondary mr-2">Comment</a>
+                            <a href="#share" class="btn btn-sm btn-outline-warning mr-2">Share</a>
+                            <div class="reactions" onmouseover="showReactions()" onmouseout="hideReactions()">
+                                <button class="btn btn-sm btn-outline-secondary" onclick="react('like')">Like 👍</button>
+                                <button class="btn btn-sm btn-outline-secondary" onclick="react('love')">Love ❤️</button>
+                                <button class="btn btn-sm btn-outline-success" onclick="react('care')">Care 🤗</button>
+                                <button class="btn btn-sm btn-outline-warning" onclick="react('wow')">Wow 😲</button>
+                                <button class="btn btn-sm btn-outline-info" onclick="react('sad')">Sad 😢</button>
+                                <button class="btn btn-sm btn-outline-danger" onclick="react('angry')">Angry 😡</button>
+                               
+                            </div>
+                        </div>
+                        <div class="mt-2" id="reactionCount">0 Likes</div>
+                    </div>  
+
+                    
+                    <div id="comments" class="comment-section">
+                        <h5>Comments</h5>
+                        <textarea class="form-control mb-2" rows="3" placeholder="Write a comment"></textarea>
+                        <button class="btn btn-primary" onclick="postComment()">Post Comment</button>
+                        <div id="commentList" class="comment-list"></div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> 
+
+</body>
+</html>

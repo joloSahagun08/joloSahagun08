@@ -1,0 +1,36 @@
+body {
+   background-image: url(Backgroundx11.jpg);
+}
+.jumbotron {
+    background-image: url(Backgroundx.jpg);
+    background-repeat: inherit;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    background-size: 1200px;
+    
+}
+
+.feature-box {
+    width: calc(33.33% - 20px);
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.feature-box h3 {
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    color: black;
+    opacity: 80%;
+}
+
+
+

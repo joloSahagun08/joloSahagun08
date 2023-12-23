@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Johnpaul's Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Our.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Our Blogs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <article>
+                    <h2 class="mb-4">WELCOME TO MY BLOG</h2>
+                    <img src="Janpaulx.jpg" alt="Blog Image" class="img-fluid mb-4" style="width: 100%; height: 550px;">
+                    <div class="paragraph-container">
+                    <p>Hi, This is Johnpaul and this is my website</p>
+                    <p> I am Johnpaul, a person that firmly believes that fantasy is not just an escape from reality but a gateway to a realm where our imagination reigns supreme. In a world where the mundane things meets the extraordinary, I find solace and peace in the enchanting embrace of fantasy.
+                        
+                        Ever since i was 14, My love for videogames is insatiable. I've been in this incredible journey and sharing my love for online games.   
+                        
+                        In the symphony of my life, Gaming and Anime composed harmonious melodies, enriching my experiences, connecting me with a global community, and shaping my personal and creative growth. They are not just entertainment; they are part to my existence.
+                     
+                        And for those who disagree with me
+
+                         “Stories of imagination tend to upset those without one.”</p>
+                    </div>
+                    <p></p>
+                    <div>
+                        <h2 class="mb-4">Celestial Garden</h2>
+                        <img src="Celestial.jpg" alt="Blog Image" class="img-fluid mb-4" style="width: 100%; height: auto;">
+                        <div class="paragraph-container">
+                        <p>The Celestial Garden, more popularly known among locals as Good Shepherd, is a cemetery owned and managed by the Tanchan Foundation, Inc. Located in the hills of Banawa, the cemetery has become a tourist attraction due to its 'Stations of the Cross' which features life-size statues depicting Jesus Christ's last hours.</p>
+                        <p> Celestial Garden has caught the attention of people from all around Cebu because of the 14 life-sized statues depicting the Station of the Cross that dot the 12-hectar meadow. Before, this place only gets crowded during the Lent with pilgrims doing the Via Crucis, a Roman Catholic practice where people commemorate Jesus' passion and death on the cross. But I've noticed in the recent years that more and more people, young and old, visit here to do other things.</p>
+                        <p>It was already past 6 AM when we got here. There were already joggers in the area, families and couples on picnics while watching the sunrise, students snapping photos of surrounding, and others who may have just finished visiting the grave of their loved ones. Being a first-timer, I took the chance getting a close up view of the garden and snapped a couple of photos then settled down for a while to eat.</p>
+                    </div>
+                    </div>
+                    <p></p>
+                    <div>
+                        <h2 class="mb-4">Simala Shrine</h2>
+                        <img src="Simala.jpg" alt="Blog Image" class="img-fluid mb-4" style="width: 100%; height: auto;">
+                        <div class="paragraph-container">
+                        <p>The weekend (Sunday) has arrived, the day my family decided to visit Simala again in the year 2023. Since we live on Cordova, Me and my family decided to wake up early and pack things up for the ride so we can catch up to the Morning rush of V-hire.</p>
+                        <p>As you may know that,</p>
+                        <p>Simala Shrine, also known as The Monastery of the Holy Eucharist, is situated in Barangay Lindogon, Sibonga, Cebu, and is celebrated as one of the most revered religious sites in the Philippines. The monastery is both constructed and overseen by the Marian Monks of Eucharistic Adoration (MMEA), who serve as its custodians. Its popularity soared around 1997, attracting throngs of people who sought to offer prayers and wishes to the Blessed Virgin Mary. </p>
+                    </div>
+                    </div>
+                    <p></p>
+                    <div class="mt-4">
+                        <h5>Reactions</h5>
+                        <div class="reaction-buttons">
+                            <button class="btn btn-sm btn-outline-primary mr-2" onmouseover="showReactions()" onmouseout="hideReactions()">Like</button>
+                            <a href="#comments" class="btn btn-sm btn-outline-secondary mr-2">Comment</a>
+                            <a href="#share" class="btn btn-sm btn-outline-warning mr-2">Share</a>
+                            <div class="reactions" onmouseover="showReactions()" onmouseout="hideReactions()">
+                                <button class="btn btn-sm btn-outline-secondary" onclick="react('like')">Like 👍</button>
+                                <button class="btn btn-sm btn-outline-secondary" onclick="react('love')">Love ❤️</button>
+                                <button class="btn btn-sm btn-outline-success" onclick="react('care')">Care 🤗</button>
+                                <button class="btn btn-sm btn-outline-warning" onclick="react('wow')">Wow 😲</button>
+                                <button class="btn btn-sm btn-outline-info" onclick="react('sad')">Sad 😢</button>
+                                <button class="btn btn-sm btn-outline-danger" onclick="react('angry')">Angry 😡</button>
+                               
+                            </div>
+                        </div>
+                        <div class="mt-2" id="reactionCount">0 Likes</div>
+                    </div>  
+
+                    
+                    <div id="comments" class="comment-section">
+                        <h5>Comments</h5>
+                        <textarea class="form-control mb-2" rows="3" placeholder="Write a comment"></textarea>
+                        <button class="btn btn-primary" onclick="postComment()">Post Comment</button>
+                        <div id="commentList" class="comment-list"></div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> 
+
+</body>
+</html>
